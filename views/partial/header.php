@@ -1,4 +1,9 @@
-<?php // if (!isset($config_loaded)) require($_SERVER['DOCUMENT_ROOT'] . '/config.php')?>
+<?php
+if (!isset($config_loaded)) {
+  $path = pathinfo($_SERVER['SCRIPT_FILENAME']);
+  require($path['dirname'] . '/config.php');
+}
+?>
 <div class="navbar navbar-inverse navbar-fixed-top">
 	<div class="navbar-inner">
 		<div class="container-fluid">
