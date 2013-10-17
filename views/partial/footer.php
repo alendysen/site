@@ -1,4 +1,10 @@
-<?php // if (!isset($config_loaded)) require($_SERVER['DOCUMENT_ROOT'] . '/config.php')?>
+<?php
+if (!isset($config_loaded)) {
+  $path = pathinfo($_SERVER['SCRIPT_FILENAME']);
+  require($path['dirname'] . '/config.php');
+}
+?>
+
 </div><!--/span-->
 </div><!--/row-->
 <hr>

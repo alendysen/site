@@ -1,7 +1,7 @@
 <?php
 $config_loaded = true;
 
-$site_url = 'http://localhimsiuin.org/';
+$site_url = 'http://local.himsiuin.org/';
 $server_path = dirname(__FILE__);
 
 define('TITLE', 'HIMSI UIN JAKARTA');
